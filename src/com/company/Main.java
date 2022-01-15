@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.Utils.CalculatorUtils;
+import com.company.Utils.CalculatorUtilsImpl;
 
 import java.util.Scanner;
 
@@ -14,6 +15,8 @@ public class Main {
         String operator = scanner.next();
         String number_2 = scanner.next();
 
-        CalculatorUtils.startCalculate(number_1,operator,number_2);
+        CalculatorUtils calculatorUtils = new CalculatorUtilsImpl();
+        
+        calculatorUtils.startCalculate(number_1,operator,number_2);
     }
 }
